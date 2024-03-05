@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Link Local CSS Files -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <!-- Link Bootstrap's CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link Font Poppins -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/next-sidebar.css" />
+    <link rel="stylesheet" href="../css/perfect-scrollbar.css" />
+
+
+    <!-- Link Bootstrap's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Link Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/241768ba9b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container app">
+        <div class="sidebar">
+            <div class="sidebar-inner">
+                <div class="sidebar-logo">
+                    <div class="d-flex align-items-center flex-nowrap">
+                        <a class="sidebar-link text-decoration-none" href="../html/Login.html">
+                            <div class="d-flex align-items-center flex-nowrap">
+                                <div class="logo-sm">
+                                    <div class="logo d-flex d-hidden align-items-center justify-content-center">
+                                        <img src="../img/smalllogo.png" alt="Deekay_Logo">
+                                    </div>
+                                </div>
+                                <div class="logo-text d-flex align-items-center justify-content-center">
+                                    <img src="../img/Deekay_Logo_D_Text.png" alt="Deekay_Logo">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <ul class="sidebar-menu scrollable position-relative pt-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="../html/task.html">
+                            <span class="icon-holder">
+                                <i class="fas fa-chart-simple"></i>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-stopwatch"></i>
+                            </span>
+                            <span class="title">Schedule</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="../html/newlandlord.html">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-hand-holding-dollar fa-lg"></i>
+                            </span>
+                            <span class="title">Landlord</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-regular fa-building"></i>
+                            </span>
+                            <span class="title">Property</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-house-user"></i>
+                            </span>
+                            <span class="title">Tenant</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-user-group"></i>
+                            </span>
+                            <span class="title">Trustees</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-list-check"></i>
+                            </span>
+                            <span class="title">Tasks</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-regular fa-clock"></i>
+                            </span>
+                            <span class="title">Rent Schedule</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-sack-dollar"></i>
+                            </span>
+                            <span class="title">Transaction/Expense</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-regular fa-user"></i>
+                            </span>
+                            <span class="title">Users</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </span>
+                            <span class="title">Roles</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-regular fa-folder-closed"></i>
+                            </span>
+                            <span class="title">Master Data</span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link wave-effect" href="#">
+                            <span class="icon-holder">
+                                <i class="fa-regular fa-file-lines"></i>
+                            </span>
+                            <span class="title">Reports</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="admin_content">
+            <div class="nav topnav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                            <i class="fas fa-bars fa-xl"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="search_bar">
+                            <input class="search_bar" type="text" id="counter">
+                            <i class="search fa-solid fa-magnifying-glass fa-lg"></i>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-bell fa-lg"></i>
+                    </li>
+                    <li class="nav-item">
+                        <i class="fa-solid fa-gear fa-lg"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../html/Login.html">
+                            <img src="../img/Group 63565.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text">
+                <p>Admin Dashboard</p>
+            </div>
+            <div class="swiper-container">
+                <div class=" swiper-wrapper small_cards">
+                    <div class="card swiper-slide">
+                        <span class="landlords">
+                            <p>Total Landlords</p>
+                            <p>3,313</p>
+                        </span>
+                        <span class="counts">
+                            <i class="fa-solid fa-user-secret fa-xl"></i>
+                            <button type="submit" class="btn">ADD</button>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="landlords">
+                            <p>Total Properties</p>
+                            <p>4,382</p>
+                        </span>
+                        <span class="counts">
+                            <i class="fa-solid fa-house-chimney fa-xl"></i>
+                            <button type="submit" class="btn">ADD</button>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="landlords">
+                            <p>Total Trustees</p>
+                            <p>1,230</p>
+                        </span>
+                        <span class="counts">
+                            <i class="fa-solid fa-user-group fa-xl"></i>
+                            <button type="submit" class="btn">ADD</button>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="landlords">
+                            <p>Total Tenants</p>
+                            <p>3,685</p>
+                        </span>
+                        <span class="counts">
+                            <i class="fa-solid fa-house-chimney-user fa-xl"></i>
+                            <button type="submit" class="btn">ADD</button>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="landlords">
+                            <p>Total Income</p>
+                            <p>£ 14.25 M</p>
+                        </span>
+                        <span class="counts">
+                            <i class="fa-solid fa-hand-holding-dollar fa-xl"></i>
+                            <button type="submit" class="btn">ADD</button>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="card swiper-slide">
+                        <span class="landlords">
+                            <p>Total Expenses</p>
+                            <p>£ 6.45 M</p>
+                        </span>
+                        <span class="counts">
+                            <i class="fa-solid fa-book fa-xl"></i>
+                            <button type="submit" class="btn">ADD</button>
+                        </span>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+
+            </div>
+
+            <div class="graph">
+                <span class="status">
+                    <p>Invoice Status Month Wise</p>
+                </span>
+                <div class="chart">
+                    <div id="barchart_material"></div>
+                </div>
+            </div>
+            <div class="big_cards swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="bigcard-1 swiper-slide">
+                        <div class="card_main">
+                            <span>
+                                <p>Recent Added Landlord</p>
+                                <p>View All</p>
+                            </span>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>Kimberley Aberdeen Limited</p>
+                                <p>1st Floor, Unit 4 and 5, Oriel House, Yourk Lane, St Helier, Jersey, JE2 4YH
+                                </p>
+                            </div>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>Stabroad Ltd </p>
+                                <p>2nd Parklands Avenue, Plot 209/8902/1, Nairobi, Kenya</p>
+                            </div>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>Caramel Properties Limited </p>
+                                <p>P O Box 1075, JTC House, 28 Esplanade, St Helier, Jersey, JE4 2QP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigcard-2 swiper-slide">
+                        <div class="card_main">
+                            <span>
+                                <p>Recent Added Property</p>
+                                <p>View All</p>
+                            </span>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>1SB01 </p>
+                                <p>33 Mabley St, London E9 5RH, United Kingdom</p>
+                            </div>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>2DK01 </p>
+                                <p>89 Kenworthy Rd, London E9 5RB, <br>United Kingdom</p>
+                            </div>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>A502 </p>
+                                <p>31 Swinnerton St, London E9 5RG, <br>United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigcard-3 swiper-slide">
+                        <div class="card_main">
+                            <span>
+                                <p>Recent Added Tenants</p>
+                                <p>View All</p>
+                            </span>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>Esther Bellingham </p>
+                                <p>14 Daintry Way, London E9 5JJ, United Kingdom</p>
+                            </div>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>David Blackburn </p>
+                                <p>Studio F3, Arbeit Studios - Trowbridge Gardens, 1 Trowbridge Rd, London E9
+                                    5EN,
+                                    United
+                                    Kingdom</p>
+                            </div>
+                            <div class="card-content">
+                                <span class="calendar">
+                                    <i class="fa-regular fa-calendar-days"></i>
+                                    <p>06-06-2023</p>
+                                </span>
+                                <p>Natalie Brammer </p>
+                                <p>1 Trowbridge Rd, London E9 5LD, <br>United Kingdom</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination1"></div>
+            </div>
+            <div class="task_list">
+                <span>
+                    <p>Recent Task List</p>
+                    <p>View All</p>
+                </span>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr. No</th>
+                            <th scope="col">Start Date</th>
+                            <th scope="col">Task ID</th>
+                            <th scope="col">Task For</th>
+                            <th scope="col">Ref No.</th>
+                            <th scope="col">Reference</th>
+                            <th scope="col">Issue Type</th>
+                            <th scope="col">Task Name</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Solicitor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">01</td>
+                            <td>06-06-2023</td>
+                            <td>136</td>
+                            <td r>Tenant</td>
+                            <td>K1403-001</td>
+                            <td>Paul Wladorz and Company</td>
+                            <td>Lease Renewal</td>
+                            <td>2022-2023 Lease Renewal</td>
+                            <td class="overdue">Overdue</td>
+                            <td>DKLM & Co.</td>
+
+                        </tr>
+                        <tr>
+                            <td scope="row">02</td>
+                            <td>03-06-2023</td>
+                            <td>3134</td>
+                            <td>Landlord</td>
+                            <td>M801</td>
+                            <td>167 High Holborn & Finance</td>
+                            <td>Rent Review</td>
+                            <td>Planning Application & CPO</td>
+                            <td class="resolve">Resolve</td>
+                            <td>Pennington Ma..</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">03</td>
+                            <td>01-06-2023</td>
+                            <td>1343</td>
+                            <td>Property</td>
+                            <td>T118</td>
+                            <td>DP Reality Limited</td>
+                            <td>Sub Letting</td>
+                            <td>2022-2023 License to Underlet</td>
+                            <td class="overdue">Overdue</td>
+                            <td>Irwin Mitchell LLP</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">04</td>
+                            <td>28-06-2023</td>
+                            <td>3231</td>
+                            <td>Tenant</td>
+                            <td>R101</td>
+                            <td>Gala Bingo</td>
+                            <td>Funding & Loans</td>
+                            <td>2022-2023 Vacant Property</td>
+                            <td class="resolve">Resolve</td>
+                            <td>Harold Benjamin</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">05</td>
+                            <td>24-05-2023</td>
+                            <td>3321</td>
+                            <td>Property</td>
+                            <td>M1001</td>
+                            <td>Avicenna Retal Limited</td>
+                            <td>Repair</td>
+                            <td>2022-2023 Lease Renewal</td>
+                            <td class="overdue">Overdue</td>
+                            <td>Pennington Ma..</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="copy_text">
+                <p class="copyright">
+                    Copyright@2023, Deekay Property Limited. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Include Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Check screen width and initialize Swiper only for 768px
+            if (window.innerWidth = 768) {
+                var mySwiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    slidesPerGroup: 3,
+                    spaceBetween: 20,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    },
+                });
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mySwiper = new Swiper('.big_cards', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination1',
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Months', 'Total Invoice Amount', 'Received Amount', 'Pending Amount'],
+                ['January', 10.1, 9, 2.5],
+                ['Feb', 17.5, 14.8, 2.5],
+                ['March', 2.25, 14, 7.5],
+                ['April', 10.1, 9, 2.5],
+                ['May', 17.5, 14.8, 2.5],
+                ['June', 13.5, 7.5, 2.5],
+                ['July', 20, 7.5, 5.5],
+                ['August', 15.5, 13.25, 2.75],
+                ['Sept', 15.25, 12, 3],
+                ['October', 13, 9, 3],
+                ['Nov', 12.25, 6, 2.25],
+                ['December', 9.75, 5.25, 2]
+            ]);
+            // Set a background color for the bars of the 'May' entry
+            var backgroundColors = ['transparent', 'transparent', 'transparent', 'transparent', '#ffeecc'];
+
+            // Modify the background color for each row in the data array
+            for (var i = 1; i < data.getNumberOfRows(); i++) {
+                for (var j = 0; j < data.getNumberOfColumns(); j++) {
+                    data.setProperty(i, j, 'style', 'fill-color: ' + backgroundColors[i - 1]);
+                }
+            }
+            var options = {
+
+                bars: 'vertical', // Required for Material Bar Charts.
+                series: {
+                    0: { color: '#7E6DFA' },
+                    1: { color: '#81ADBB' },
+                    2: { color: '#EEC97F' }
+                },
+                width: '100%', // Make the chart container 100% wide
+                height: 333, // Set the initial height of the chart
+                chartArea: { left: 80, top: 20, width: '100%', height: '80%' },
+                legend: { position: 'none' },
+                hAxis: {
+                    title: 'Months',
+                    titlePosition: 'out', // Move the title inside the chart area
+                    titleTextStyle: {
+                        color: '#008CA6', // Adjust title text color if needed
+                        fontSize: 11, // Adjust title font size if needed
+                        alignment: 'start', // Align title to the start (left)
+                        fontName: 'Poppins'
+                    },
+                },
+                vAxis: {
+                    title: 'Amount in £ million',
+                    titleTextStyle: {
+                        color: '#008CA6', // Adjust title text color if needed
+                        fontSize: 14, // Adjust title font size if needed
+                        alignment: 'start', // Align title to the start (left)
+                        fontName: 'Poppins'
+                    },
+                },
+                explorer: {
+                    axis: 'horizontal',
+                    keepInBounds: true,
+                    maxZoomIn: 4.0
+                },
+                bar: {
+                    groupWidth: '40%', // Adjust the width of the bars (50% of the available space)
+                    borderRadius: 45, // Set border radius for the bars (adjust the value as needed)
+                },
+                tooltip: {
+                    isHtml: true,
+                    textStyle: { fontSize: 12, color: 'green' },
+                    showColorCode: true,
+                    trigger: 'selection' // to prevent automatic tooltip on hover
+                }
+            };
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/perfect-scrollbar.min.js"></script>
+    <script src="../js/next-sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+
+</html>
