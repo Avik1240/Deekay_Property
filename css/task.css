@@ -1,0 +1,560 @@
+.container {
+    height: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #ebeef3 0% 0% no-repeat padding-box !important;
+}
+
+/*Sidebar Content*/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0E2753 0% 0% no-repeat padding-box;
+    width: 100px;
+    height: 1250px;
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.sidebar img {
+    margin-top: 15px;
+}
+
+.sidebar div ul {
+    width: 42px;
+    margin-top: 20px;
+}
+
+.sidebar .nav {
+    align-items: center;
+    background: transparent;
+}
+
+.sidebar_content {
+    height: 550px !important;
+    justify-content: space-around;
+}
+
+
+.sidebar_content i {
+    color: white;
+}
+
+.sidebar_content li {
+    width: 42px !important;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.sidebar_content li:hover {
+    background: #008CA6 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+}
+
+/*Sidebar content Ends Here*/
+
+/*Admin Dashboard*/
+.admin_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 0;
+}
+
+.nav ul {
+    align-items: center;
+    margin-right: 45px;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li:last-child {
+    margin-right: 0px;
+}
+
+.nav ul,
+.nav ul li {
+    width: max-content;
+    height: max-content;
+}
+
+.topnav i {
+    color: #0E2753;
+}
+
+.search_bar {
+    width: 396px;
+    height: 40px;
+    /* UI Properties */
+    background: #EBEEF3 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+
+.search_bar input {
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0.32px;
+    color: #505050;
+    padding-left: 15px;
+}
+
+.search {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.admin_content p {
+    text-align: left;
+    font: normal normal 600 24px/22px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+.text,
+.copy_text {
+    width: 1403px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.btn-circle {
+    padding: 0 !important;
+    width: 42px;
+    height: 42px;
+    background: #FFFFFF 0% 0% no-repeat padding-box !important;
+    border: 1px solid #CCCCCC !important;
+    border-radius: 100px !important;
+    opacity: 1;
+}
+
+.btn-circle:hover {
+    background: #ffffff7a 0% 0% no-repeat padding-box !important;
+}
+
+.text i {
+    color: #CCCCCC;
+}
+
+.text span button:nth-child(4) {
+    width: 155px;
+    height: 42px;
+    background: #008CA7 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.text span button:nth-child(4):hover {
+    background: #008ba786 0% 0% no-repeat padding-box;
+
+}
+
+.task_table {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.search_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#taskTextArea {
+    width: 521px;
+    height: 42px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 45px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0.32px;
+    color: #505050;
+    padding: 9px 0px 10px 20px;
+}
+
+.navbar-nav {
+    width: 100%;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-space {
+    float: right;
+    color: #008ba7;
+}
+
+.input-container {
+    position: relative;
+    width: 113px;
+}
+
+.input-container span i {
+    color: #008ba7;
+}
+
+#datepicker,
+#datepicker-to {
+    width: 113px;
+    height: 40px;
+    font: 13px Poppins;
+    border: 1px solid #CCCCCC;
+    border-radius: 45px;
+    opacity: 1;
+    padding: 9px 0px 10px 9px;
+}
+
+
+/* Style the calendar icon */
+.calendar-icon {
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    /* Adjust as needed to position the icon */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search_content ul li:nth-child(2) button,
+.search_content ul li:nth-child(3) button {
+    width: 216px;
+    height: 42px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 45px;
+    opacity: 1;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0.32px;
+    color: #505050;
+    opacity: 1;
+}
+
+.search_content ul li:last-child button {
+    width: 117px;
+    height: 42px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #008ba7;
+    border-radius: 100px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #008ba6;
+    transition: all 0.5s ease;
+}
+
+.search_content ul li:last-child button:hover {
+    color: #FFFFFF;
+    background: #008ba7 0% 0% no-repeat padding-box;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td {
+    text-align: left;
+    font: normal normal normal 14px/22px Poppins;
+    letter-spacing: -0.14px;
+    color: #000000;
+    opacity: 1;
+}
+
+.table thead {
+    height: 70px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    text-align: left;
+    font: normal normal bold 16px/22px Poppins;
+    letter-spacing: -0.16px;
+    color: #000000;
+    opacity: 1;
+}
+
+.table thead th {
+    border: none;
+}
+
+.table thead tr th {
+    padding-bottom: 20px;
+}
+
+.table thead th:nth-child(1) {
+    padding-left: 20px;
+}
+
+#myTable {
+    height: 850px;
+    margin-bottom: 0;
+}
+
+.table tr td:nth-child(1) {
+    text-align: center;
+}
+
+.status-overdue {
+    color: #EB7373;
+}
+
+.status-resolve {
+    color: #198F10;
+}
+
+.bottom {
+    width: 1341px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    width: 43px;
+    height: 43px;
+    color: #6C6C6C;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    margin: 0 4px;
+}
+
+.pagination a.active,
+.pagination a:hover {
+    width: 43px;
+    height: 43px;
+    /* UI Properties */
+    background: var(--unnamed-color-008ca6) 0% 0% no-repeat padding-box;
+    background: #008CA6 0% 0% no-repeat padding-box;
+    color: #f2f2f2;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.record-info {
+    text-align: left;
+    font: normal normal 16px/22px Poppins;
+    letter-spacing: -0.16px;
+    color: #6C6C6C;
+    opacity: 1;
+}
+
+.record-info span {
+    color: #008ca6;
+    font-weight: bolder;
+}
+
+/*Task List Table*/
+.task {
+    width: 1403px;
+    height: 1011px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+.box {
+    padding: 20px 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*Task list Table Here*/
+
+
+
+/*Copyright Statement*/
+.copyright {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+    font: normal normal normal 14px/18px Poppins !important;
+    letter-spacing: 0px;
+    color: #6C6C6C !important;
+    opacity: 1;
+}
+
+/*Admin Dashboard Ends Here*/
+
+@media only screen and (max-width: 768px) {
+
+    /*Sidebar Content*/
+    .sidebar {
+        width: 68px;
+        height: 1600px;
+    }
+
+    /*Sidebar content Ends Here*/
+
+    /*Admin Dashboard*/
+    .nav {
+        height: 60px;
+    }
+
+    .nav ul {
+        margin-right: 20px;
+    }
+
+    .nav ul li {
+        margin-right: 20px;
+    }
+
+    .search_bar {
+        width: 296px;
+    }
+
+    .admin_content p {
+        font: normal normal 600 20px/22px Poppins;
+    }
+
+    .text,
+    .copy_text {
+        width: 680px;
+    }
+
+    .text i {
+        color: #CCCCCC;
+    }
+
+    .text span button:nth-child(4) {
+        width: 145px;
+        font: normal normal normal 14px/17px Poppins;
+    }
+
+    .text span button:nth-child(4):hover {
+        background: #008ba786 0% 0% no-repeat padding-box;
+
+    }
+
+    /*Task List Table*/
+    .task {
+        width: 680px;
+        height: 1420px;
+    }
+
+    .search_content {
+        width: 680px;
+    }
+
+    #taskTextArea {
+        width: 121px;
+        font: normal normal normal 10px/30px Poppins;
+        padding: 9px 0px 10px 10px;
+    }
+
+    .navbar-nav {
+        width: 680px;
+    }
+
+    .icon-space {
+        display: none;
+    }
+
+    #datepicker,
+    #datepicker-to {
+        font: 10px Poppins;
+    }
+
+    .search_content ul li:nth-child(2) button,
+    .search_content ul li:nth-child(3) button {
+        width: 70px;
+        height: 42px;
+        font: normal normal normal 10px/30px Poppins;
+    }
+
+    .search_content ul li:last-child button {
+        padding: 0 !important;
+        width: 50px;
+        height: 42px;
+        font: normal normal normal 10px/17px Poppins;
+    }
+
+    td {
+        font: normal normal normal 11px/22px Poppins;
+    }
+
+    .table thead {
+        font: normal normal bold 14px/22px Poppins;
+    }
+
+    .bottom {
+        width: 670px;
+    }
+
+    .pagination a {
+        width: 30px;
+        height: 30px;
+        padding: 0px 10px;
+    }
+
+    .pagination a.active,
+    .pagination a:hover {
+        width: 30px;
+        height: 30px;
+    }
+
+    .record-info {
+        font: normal normal 14px/22px Poppins;
+    }
+
+    /*Task list Table Here*/
+}

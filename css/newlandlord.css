@@ -1,0 +1,786 @@
+.container {
+    height: 100%;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #ebeef3 0% 0% no-repeat padding-box !important;
+}
+
+/*Sidebar Content*/
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0E2753 0% 0% no-repeat padding-box;
+    width: 100px;
+    height: 1716px;
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.sidebar img {
+    margin-top: 15px;
+}
+
+.sidebar div ul {
+    width: 42px;
+    margin-top: 20px;
+}
+
+.sidebar .nav {
+    align-items: center;
+    background: transparent;
+}
+
+.sidebar_content {
+    height: 550px !important;
+    justify-content: space-around;
+}
+
+
+.sidebar_content i {
+    color: white;
+}
+
+.sidebar_content li {
+    width: 42px !important;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.sidebar_content li:hover {
+    background: #008CA6 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+}
+
+/*Sidebar content Ends Here*/
+
+/*Admin Dashboard*/
+.admin_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    z-index: 0;
+}
+
+.nav ul {
+    align-items: center;
+    margin-right: 45px;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li:last-child {
+    margin-right: 0px;
+}
+
+.nav ul,
+.nav ul li {
+    width: max-content;
+    height: max-content;
+}
+
+.topnav i {
+    color: #0E2753;
+    transition: all 0.3s ease;
+}
+
+.topnav i:hover {
+    cursor: pointer;
+    color: #0e27537c;
+}
+
+.topnav img {
+    cursor: pointer;
+}
+
+
+.search_bar {
+    width: 396px;
+    height: 40px;
+    /* UI Properties */
+    background: #EBEEF3 0% 0% no-repeat padding-box;
+    border-radius: 100px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+
+.search_bar input {
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0.32px;
+    color: #505050;
+    padding-left: 15px;
+}
+
+.search {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.text,
+.copy_text {
+    width: 1403px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin_content p {
+    text-align: left;
+    font: normal normal 600 24px/22px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.search_content {
+    width: 100%;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.search_content ul {
+    border-radius: 12px 12px 0px 0px;
+    height: 70px;
+    /* UI Properties */
+    background: rgba(14, 39, 83, 0.05) 0% 0% no-repeat padding-box;
+}
+
+.search_content ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    height: 70px;
+    opacity: 1;
+
+}
+
+.search_content ul li:hover {
+    cursor: pointer;
+    background: #008CA6 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.search_content ul li:first-child:hover {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.search_content ul li:last-child:hover {
+    border-radius: 0px 12px 0px 0px;
+}
+
+
+.search_content ul li button {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #646464;
+    opacity: 1;
+
+}
+
+.search_content ul li button:hover {
+    background: #008CA6 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    border-radius: 12px 0px 0px 0px;
+    color: #FFFFFF;
+    opacity: 1;
+
+}
+
+.search_content ul li:first-child button:hover {
+    border-radius: 12px 0px 0px 0px;
+}
+
+.search_content ul li:last-child button:hover {
+    border-radius: 0px 12px 0px 0px;
+}
+
+.nav-item {
+    width: 176px;
+}
+
+.navbar-nav {
+    flex-direction: row !important;
+}
+
+.search_content .nav-item:not(:last-child) {
+    border-right: 1px solid #CCCCCC;
+    /* Adjust color and thickness as needed */
+}
+
+.tab-content {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.navbar-nav .btn.active-btn {
+    background-color: #008ba6;
+    color: #fff;
+}
+
+/*Task List Table*/
+.form-label {
+    margin-bottom: 1rem !important;
+}
+
+.task {
+    width: 1403px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    opacity: 1;
+}
+
+.task_form {
+    height: 1450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company {
+    width: 1337px;
+    text-align: left;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #555555;
+    opacity: 1;
+}
+
+.formone {
+    margin-top: 10px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#reference {
+    width: 428px;
+}
+
+.form-check-input {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.form-check-input:checked {
+    background-color: #008ca6 !important;
+}
+
+.archived,
+.uk {
+    padding-top: 35px;
+    height: max-content !important;
+    width: 160px !important;
+}
+
+.archived label,
+.uk label {
+    padding-top: .3rem !important;
+}
+
+.address p {
+    text-align: left;
+    font: normal normal bold 22px/33px Poppins;
+    letter-spacing: 0px;
+    color: #0E2753;
+    opacity: 1;
+}
+
+.formtwo {
+    margin-top: 10px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #555555;
+    opacity: 1;
+}
+
+.property {
+    display: flex;
+    flex-direction: row;
+}
+
+.property div {
+    width: 421.66px;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #F4F6F9 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.property div p {
+    width: max-content;
+    text-align: left;
+    font: normal normal 600 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #323232;
+}
+
+.property div p:not(:first-child) {
+    text-align: left;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #323232;
+    opacity: 1;
+}
+
+.other_details {
+    margin-top: 20px;
+}
+
+.other_details p {
+    text-align: left;
+    font: normal normal bold 22px/33px Poppins;
+    letter-spacing: 0px;
+    color: #0E2753;
+    opacity: 1;
+}
+
+.formthree {
+    height: 500px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #555555;
+    opacity: 1;
+}
+
+
+.radio_checks {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio_checks label input:first-child {
+    margin-right: 10px;
+}
+
+.radio_checks1 {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.radio_checks1 label:first-child {
+    margin-right: 60px;
+}
+
+.radio_checks1 label:first-child {
+    margin-right: 60px;
+}
+
+.radio_checks1 label input:first-child {
+    margin-right: 10px;
+}
+
+.radio-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio-button input {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.radio-button__label {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #555555;
+    opacity: 1;
+}
+
+
+.radio-button__input:checked+.radio-button__control {
+    border-color: #01a982;
+}
+
+#choice1-1,
+#choice1-2 {
+    accent-color: #008CA6;
+}
+
+.radio-button__input:checked+.radio-button__label {
+    color: #008CA6
+}
+
+
+.icon-space {
+    float: right;
+    color: #008ba7;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container span i {
+    color: #008ba7;
+}
+
+#datepicker,
+#datepicker3,
+#datepicker2 {
+    width: 421.66px;
+    font: normal normal normal 16px/17px Poppins;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.25rem;
+    opacity: 1;
+    padding: 9px 0px 10px 9px;
+}
+
+.increment-decrement {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 421.66px;
+    height: 38px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.increment-decrement input {
+    border: 1px solid #CCCCCC;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #555555;
+    opacity: 1;
+    padding-left: 13px;
+}
+
+.increment-decrement i {
+    color: #008ba6;
+}
+
+.arrow {
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.up {
+    right: 15px;
+}
+
+.down {
+    right: 15px;
+}
+
+.down {
+    top: 74%;
+    transform: translateY(-50%);
+}
+
+/* Style the calendar icon */
+.calendar-icon {
+    float: right;
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    /* Adjust as needed to position the icon */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.reset {
+    width: 1337px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.reset .btn {
+    width: 200px;
+    height: 51px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #848484;
+    border-radius: 100px;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #646464;
+    opacity: 1;
+}
+
+.reset .btn:first-child:hover {
+    color: #FFFFFF;
+    background: #008CA7 0% 0% no-repeat padding-box;
+    border: none;
+}
+
+.reset .btn:last-child {
+    margin-left: 20px;
+    font: normal normal normal 16px/17px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: #008CA7 0% 0% no-repeat padding-box;
+    border: none;
+}
+
+.reset .btn:last-child:hover {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #848484;
+    color: #646464;
+
+}
+
+/*Task list Table Here*/
+
+/*Copyright Statement*/
+.copyright {
+    margin-top: 0 !important;
+    margin-bottom: 1rem !important;
+    text-align: left !important;
+    font: normal normal normal 14px/18px Poppins !important;
+    letter-spacing: 0px;
+    color: #6C6C6C !important;
+    opacity: 1;
+}
+
+/*Admin Dashboard Ends Here*/
+
+@media only screen and (max-width: 768px) {
+
+
+    /*Sidebar Content*/
+    .sidebar {
+        width: 68px;
+        height: 1600px;
+    }
+
+    /*Sidebar content Ends Here*/
+
+    /*Admin Dashboard*/
+    .nav {
+        height: 60px;
+    }
+
+    .nav ul {
+        margin-right: 15px;
+    }
+
+    .nav ul li {
+        margin-right: 20px;
+    }
+
+    .search_bar {
+        width: 296px;
+    }
+
+    .search_bar input {
+        font: normal normal normal 12px/30px Poppins;
+    }
+
+    .text,
+    .copy_text {
+        width: 680px;
+    }
+
+    .admin_content p {
+        font: normal normal 600 20px/22px Poppins;
+    }
+
+    .search_content ul li button {
+        font: normal normal normal 12px/25px Poppins;
+    }
+
+    .search_content ul li button:hover {
+        font: normal normal 12px/25px Poppins;
+    }
+
+    .task {
+        width: 680px;
+    }
+
+    .task_form {
+        height: 100%;
+        justify-content: flex-start;
+    }
+
+    .company {
+        width: 670px;
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    #reference {
+        width: 423px;
+    }
+
+    .form-select {
+        font: normal normal normal 12px/17px Poppins !important;
+
+    }
+
+    .address {
+        width: 670px;
+    }
+
+    .address p {
+        text-align: left;
+        font: normal normal bold 20px/33px Poppins;
+    }
+
+    .formtwo {
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    .property div {
+        width: 311px;
+        height: 31px;
+    }
+
+    .property div p {
+        font: normal normal 600 12px/17px Poppins;
+    }
+
+    .property div p:not(:first-child) {
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    .other_details {
+        margin-top: 0px;
+        width: 670px;
+    }
+
+    .other_details p {
+        font: normal normal bold 20px/33px Poppins;
+    }
+
+    .formthree {
+        height: 500px;
+        margin-top: 10px;
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    .form-control {
+        height: 31px;
+    }
+
+    .multiSelect {
+        width: 200px !important;
+    }
+
+    .radio_checks {
+        padding-top: 7px;
+    }
+
+    .radio_checks label input:first-child {
+        margin-right: 7px;
+    }
+
+    .radio-button input {
+        width: 10px;
+        height: 10px;
+    }
+
+    .radio-button__label {
+        font: normal normal normal 10px/17px Poppins;
+    }
+
+    #datepicker,
+    #datepicker3,
+    #datepicker2 {
+        width: 200px;
+        height: 31px;
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    .increment-decrement {
+        width: 200px;
+        height: 31px;
+    }
+
+    .increment-decrement input {
+        height: 31px;
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    .reset {
+        width: 670px;
+        margin-bottom: 10px;
+    }
+
+    .reset .btn {
+        width: 100px;
+        height: 31px;
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    .reset .btn:last-child {
+        font: normal normal normal 12px/17px Poppins;
+    }
+
+    /*Task list Table Here*/
+
+
+
+    /*Admin Dashboard Ends Here*/
+}

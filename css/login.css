@@ -1,0 +1,125 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    
+    background-image: url("../img/MaskGroup196.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.bar {
+    width: 9px;
+    height: 447px;
+    background: #008CA6 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 32px #7D7D7D40;
+    border-radius: 10px;
+    opacity: 1;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 439px;
+}
+.login_text {
+    text-align: left;
+    font: bold 34px Poppins;
+    letter-spacing: 0px;
+    color: #00100C;
+    opacity: 1;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+    width: 408px;
+    height: 61px;
+    background: #F3F4F9 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+#email,
+#password {
+    text-align: left;
+    font: medium 16px Poppins;
+    letter-spacing: 0px;
+    color: #323232;
+    opacity: 1;
+}
+
+.form-check a {
+    float: inline-end;
+    text-align: right;
+    font: 14px Poppins;
+    letter-spacing: 0px;
+    color: #323232;
+    opacity: 1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.form-check a:hover {
+    color: #32323281;
+}
+
+.login button {
+    width: 408px;
+    height: 61px;
+    background: #0E2753 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+.login button:hover {
+    background: #0e2753bb 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+
+.copyright {
+    margin-top: 60px;
+    margin-left: 108px;
+    text-align: left;
+    font:17px Poppins;
+    letter-spacing: 1px;
+    color: #646464;
+    opacity: 1;
+}
