@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task List - Dashboard</title>
+    <link rel="shortcut icon" href="#">
     <!-- Link Local CSS Files -->
     <link rel="stylesheet" href="../css/newlandlord.css">
     <link rel="stylesheet" href="../css/multiselector.css">
@@ -369,11 +370,11 @@
                                         <div>
                                             <label for="lastname" class="form-label">Expend Comm.</label>
                                             <div class="increment-decrement">
-                                                <input class="increment-decrement" type="text" id="counter"
+                                                <input class="increment-decrement" type="text" id="count"
                                                     value="0.00 %" readonly>
-                                                <i class="arrow up fa-solid fa-angle-up" onclick="increment(event)"></i>
-                                                <i class="arrow down fa-solid fa-angle-down"
-                                                    onclick="decrement(event)"></i>
+                                                    <i class="arrow up fa-solid fa-angle-up" onclick="increment(event)"></i>
+                                                    <i class="arrow down fa-solid fa-angle-down"
+                                                        onclick="decrement(event)"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -483,10 +484,10 @@
                         </div>
                     </div>
                     <div class="reset">
-                        <button class="btn">
+                        <button class="submit">
                             Reset
                         </button>
-                        <button class="btn">
+                        <button class="submit">
                             Save & Next
                         </button>
                     </div>
@@ -526,15 +527,15 @@
     <script>
         function increment(event) {
             event.preventDefault();
-            var counter = document.getElementById('counter');
-            counter.value = parseInt(counter.value) + 1 + ' %';
+            var count = document.getElementById('count');
+            count.value = parseInt(count.value) + 1 + ' %';
         }
 
         function decrement(event) {
             event.preventDefault();
-            var counter = document.getElementById('counter');
-            if (parseInt(counter.value) > 0) {
-                counter.value = parseInt(counter.value) - 1 + ' %';
+            var count = document.getElementById('count');
+            if (parseInt(count.value) > 0) {
+                count.value = parseInt(count.value) - 1 + ' %';
             }
         }
     </script>

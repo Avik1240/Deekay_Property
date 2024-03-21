@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="shortcut icon" href="#">
     <!-- Link Local CSS Files -->
     <link rel="stylesheet" href="../css/dashboard.css">
     <!-- Link Bootstrap's CSS -->
@@ -467,34 +468,74 @@
 
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Include Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        var mySwiper = undefined;
+
+        function initSwiper() {
             // Check screen width and initialize Swiper only for 768px
-            if (window.innerWidth = 768) {
-                var mySwiper = new Swiper('.swiper-container', {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    spaceBetween: 20,
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true,
-                    },
-                });
+            if (window.innerWidth <= 768) {
+                // Initialize Swiper if not already initialized
+                if (mySwiper === undefined) {
+                    mySwiper = new Swiper('.swiper-container', {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                        spaceBetween: 20,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                    });
+                }
+            } else {
+                // Destroy Swiper if not on 768px
+                if (mySwiper !== undefined) {
+                    mySwiper.destroy(true);
+                    mySwiper = undefined;
+                }
             }
+        }
+
+        // Swiper plugin initialization
+        initSwiper();
+
+        // Swiper plugin initialization on window resize
+        window.addEventListener('resize', function () {
+            initSwiper();
         });
     </script>
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var mySwiper = new Swiper('.big_cards', {
-                slidesPerView: 1,
-                spaceBetween: 10,
-                pagination: {
-                    el: '.swiper-pagination1',
-                    clickable: true,
-                },
-            });
+        var mySwiperBigCards = undefined;
+        function initSwiper() {
+            // Check screen width and initialize Swiper for .big_cards
+            if (window.innerWidth <= 768) {
+                // Initialize Swiper if not already initialized
+                if (mySwiperBigCards === undefined) {
+                    mySwiperBigCards = new Swiper('.big_cards', {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                        pagination: {
+                            el: '.swiper-pagination1',
+                            clickable: true,
+                        },
+                    });
+                }
+            } else {
+                // Destroy Swiper if not on 768px
+                if (mySwiperBigCards !== undefined) {
+                    mySwiperBigCards.destroy(true);
+                    mySwiperBigCards = undefined;
+                }
+            }
+        }
+        // Swiper plugin initialization
+        initSwiper();
+
+        // Swiper plugin initialization on window resize
+        window.addEventListener('resize', function () {
+            initSwiper();
         });
     </script>
 
@@ -580,26 +621,12 @@
             chart.draw(data, google.charts.Bar.convertOptions(options));
         }
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../js/perfect-scrollbar.min.js"></script>
     <script src="../js/next-sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-    <script type="text/javascript">
 
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-36251023-1']);
-        _gaq.push(['_setDomainName', 'jqueryscript.net']);
-        _gaq.push(['_trackPageview']);
-
-        (function () {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
-
-    </script>
 </body>
 
 </html>

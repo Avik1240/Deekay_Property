@@ -1,6 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+}
 .container {
     height: 100%;
-    max-width: 100% !important;
+    max-width: 1577px !important;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
@@ -558,7 +562,7 @@ p {
     justify-content: flex-end;
 }
 
-.reset .btn {
+.reset .submit {
     width: 200px;
     height: 51px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -568,15 +572,16 @@ p {
     letter-spacing: 0px;
     color: #646464;
     opacity: 1;
+    transition: all .3s ease;
 }
 
-.reset .btn:first-child:hover {
+.reset .submit:first-child:hover {
     color: #FFFFFF;
     background: #008CA7 0% 0% no-repeat padding-box;
     border: none;
 }
 
-.reset .btn:last-child {
+.reset .submit:last-child {
     margin-left: 20px;
     font: normal normal normal 16px/17px Poppins;
     letter-spacing: 0px;
@@ -585,7 +590,7 @@ p {
     border: none;
 }
 
-.reset .btn:last-child:hover {
+.reset .submit:last-child:hover {
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #848484;
     color: #646464;
@@ -768,13 +773,13 @@ p {
         margin-bottom: 10px;
     }
 
-    .reset .btn {
+    .reset .submit {
         width: 100px;
         height: 31px;
         font: normal normal normal 12px/17px Poppins;
     }
 
-    .reset .btn:last-child {
+    .reset .submit:last-child {
         font: normal normal normal 12px/17px Poppins;
     }
 

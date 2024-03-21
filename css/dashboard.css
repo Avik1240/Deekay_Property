@@ -1,6 +1,10 @@
+body{
+    display: flex;
+    justify-content: center;
+}
 .container {
     height: 100%;
-    max-width: 100% !important;
+    max-width: 1577px !important;
     padding: 0 !important;
     margin: 0 !important;
     display: flex;
@@ -575,7 +579,7 @@
 
 /*Admin Dashboard Ends Here*/
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     /*Sidebar Content*/
     .sidebar {
